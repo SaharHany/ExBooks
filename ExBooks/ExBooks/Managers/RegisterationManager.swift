@@ -7,11 +7,21 @@
 //
 
 import Foundation
-class RegisterationManager : NSObject {
-    let sharedInstance : RegisterationManager
-    override init() {
-        if sharedInstance {
-            <#code#>
+class RegisterationManager {
+    static let sharedInstance = RegisterationManager()
+    private init() {
+    }
+    
+    func register(email : String , password : String, completionBlock: @escaping (_ success: Bool) -> Void) {
+        registerWithFirebase(email: email, password: password){ (success) in
+            completionBlock(success)
+        }
+    }
+    
+    private func registerWithFirebase(email: String, password: String, completionBlock: @escaping (_ success: Bool) -> Void) {
+        let firebaseAuthManager = FirebaseAuthManager.sharedInstance
+        firebaseAuthManager.createUser(email: email, password: password) { (success) in
+            completionBlock(success)
         }
     }
 }

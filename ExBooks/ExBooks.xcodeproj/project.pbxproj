@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		61049D8123EDA63F00DDB6E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8023EDA63F00DDB6E2 /* User.swift */; };
 		61049D8423EDA6AF00DDB6E2 /* RegisterationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */; };
+		61049D8623EDF3B300DDB6E2 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8523EDF3B300DDB6E2 /* ValidationManager.swift */; };
+		61049D8823EDF92900DDB6E2 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8723EDF92900DDB6E2 /* FirebaseAuthManager.swift */; };
 		61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF4E23ED729200E0814E /* AppDelegate.swift */; };
 		61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF5023ED729200E0814E /* SceneDelegate.swift */; };
 		61A2CF5323ED729200E0814E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF5223ED729200E0814E /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		574FB2271C94A3F3A1F83B5B /* Pods-ExBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExBooks.release.xcconfig"; path = "Target Support Files/Pods-ExBooks/Pods-ExBooks.release.xcconfig"; sourceTree = "<group>"; };
 		61049D8023EDA63F00DDB6E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationManager.swift; sourceTree = "<group>"; };
+		61049D8523EDF3B300DDB6E2 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		61049D8723EDF92900DDB6E2 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		61A2CF4B23ED729200E0814E /* ExBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A2CF4E23ED729200E0814E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A2CF5023ED729200E0814E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */,
+				61049D8523EDF3B300DDB6E2 /* ValidationManager.swift */,
+				61049D8723EDF92900DDB6E2 /* FirebaseAuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 				61049D8423EDA6AF00DDB6E2 /* RegisterationManager.swift in Sources */,
 				61A2CF7223ED99F200E0814E /* SignupViewController.swift in Sources */,
 				61A2CF5323ED729200E0814E /* ViewController.swift in Sources */,
+				61049D8623EDF3B300DDB6E2 /* ValidationManager.swift in Sources */,
+				61049D8823EDF92900DDB6E2 /* FirebaseAuthManager.swift in Sources */,
 				61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */,
 				61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */,
 				61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */,
