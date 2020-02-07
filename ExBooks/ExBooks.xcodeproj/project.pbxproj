@@ -14,6 +14,7 @@
 		61A2CF5923ED729200E0814E /* ExBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF5723ED729200E0814E /* ExBooks.xcdatamodeld */; };
 		61A2CF5B23ED729500E0814E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF5A23ED729500E0814E /* Assets.xcassets */; };
 		61A2CF5E23ED729500E0814E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF5C23ED729500E0814E /* LaunchScreen.storyboard */; };
+		61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF6E23ED7D1800E0814E /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		61A2CF5A23ED729500E0814E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61A2CF5D23ED729500E0814E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61A2CF5F23ED729500E0814E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61A2CF6E23ED7D1800E0814E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		61A2CF6623ED72B600E0814E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				61A2CF6E23ED7D1800E0814E /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +94,8 @@
 		61A2CF6723ED72BE00E0814E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				61A2CF6D23ED7CFD00E0814E /* Registeration */,
+				61A2CF6C23ED7CEF00E0814E /* Login */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,6 +105,20 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		61A2CF6C23ED7CEF00E0814E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		61A2CF6D23ED7CFD00E0814E /* Registeration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registeration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +195,7 @@
 				61A2CF5323ED729200E0814E /* ViewController.swift in Sources */,
 				61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */,
 				61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */,
+				61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */,
 				61A2CF5923ED729200E0814E /* ExBooks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
