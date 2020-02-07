@@ -7,3 +7,11 @@
 //
 
 import Foundation
+class RegisterationManager : NSObject {
+    let sharedInstance : RegisterationManager
+    override init() {
+        if sharedInstance {
+            <#code#>
+        }
+    }
+}

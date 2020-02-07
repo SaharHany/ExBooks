@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61049D8123EDA63F00DDB6E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8023EDA63F00DDB6E2 /* User.swift */; };
+		61049D8423EDA6AF00DDB6E2 /* RegisterationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */; };
 		61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF4E23ED729200E0814E /* AppDelegate.swift */; };
 		61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF5023ED729200E0814E /* SceneDelegate.swift */; };
 		61A2CF5323ED729200E0814E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF5223ED729200E0814E /* ViewController.swift */; };
@@ -15,9 +17,17 @@
 		61A2CF5B23ED729500E0814E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF5A23ED729500E0814E /* Assets.xcassets */; };
 		61A2CF5E23ED729500E0814E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF5C23ED729500E0814E /* LaunchScreen.storyboard */; };
 		61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF6E23ED7D1800E0814E /* Book.swift */; };
+		61A2CF7223ED99F200E0814E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF7123ED99F200E0814E /* SignupViewController.swift */; };
+		61A2CF7423ED9A3A00E0814E /* RegisterationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF7323ED9A3A00E0814E /* RegisterationStoryboard.storyboard */; };
+		61A2CF7623ED9D2800E0814E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF7523ED9D2800E0814E /* GoogleService-Info.plist */; };
+		FE1338B4EBA4E17C87C19FE7 /* Pods_ExBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BE9C8DDB692F6CD52F260 /* Pods_ExBooks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		504F1181910E2676F6C9B88A /* Pods-ExBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExBooks.debug.xcconfig"; path = "Target Support Files/Pods-ExBooks/Pods-ExBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		574FB2271C94A3F3A1F83B5B /* Pods-ExBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExBooks.release.xcconfig"; path = "Target Support Files/Pods-ExBooks/Pods-ExBooks.release.xcconfig"; sourceTree = "<group>"; };
+		61049D8023EDA63F00DDB6E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationManager.swift; sourceTree = "<group>"; };
 		61A2CF4B23ED729200E0814E /* ExBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A2CF4E23ED729200E0814E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A2CF5023ED729200E0814E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +38,10 @@
 		61A2CF5D23ED729500E0814E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61A2CF5F23ED729500E0814E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A2CF6E23ED7D1800E0814E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		61A2CF7123ED99F200E0814E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		61A2CF7323ED9A3A00E0814E /* RegisterationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterationStoryboard.storyboard; sourceTree = "<group>"; };
+		61A2CF7523ED9D2800E0814E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A69BE9C8DDB692F6CD52F260 /* Pods_ExBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1338B4EBA4E17C87C19FE7 /* Pods_ExBooks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61049D8223EDA68400DDB6E2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		61A2CF4223ED729200E0814E = {
 			isa = PBXGroup;
 			children = (
 				61A2CF4D23ED729200E0814E /* ExBooks */,
 				61A2CF4C23ED729200E0814E /* Products */,
+				B7EE93FEBF267709C47568EE /* Pods */,
+				E3A3F25CA29446475EA81C70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 		61A2CF4D23ED729200E0814E /* ExBooks */ = {
 			isa = PBXGroup;
 			children = (
+				61049D8223EDA68400DDB6E2 /* Managers */,
 				61A2CF6B23ED762900E0814E /* Resources */,
 				61A2CF6723ED72BE00E0814E /* Views */,
 				61A2CF6623ED72B600E0814E /* Models */,
@@ -71,6 +97,7 @@
 				61A2CF5A23ED729500E0814E /* Assets.xcassets */,
 				61A2CF5C23ED729500E0814E /* LaunchScreen.storyboard */,
 				61A2CF5F23ED729500E0814E /* Info.plist */,
+				61A2CF7523ED9D2800E0814E /* GoogleService-Info.plist */,
 				61A2CF5723ED729200E0814E /* ExBooks.xcdatamodeld */,
 			);
 			path = ExBooks;
@@ -79,6 +106,7 @@
 		61A2CF6523ED72AB00E0814E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61A2CF7023ED93FD00E0814E /* Registeration */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -87,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				61A2CF6E23ED7D1800E0814E /* Book.swift */,
+				61049D8023EDA63F00DDB6E2 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,8 +146,34 @@
 		61A2CF6D23ED7CFD00E0814E /* Registeration */ = {
 			isa = PBXGroup;
 			children = (
+				61A2CF7323ED9A3A00E0814E /* RegisterationStoryboard.storyboard */,
 			);
 			path = Registeration;
+			sourceTree = "<group>";
+		};
+		61A2CF7023ED93FD00E0814E /* Registeration */ = {
+			isa = PBXGroup;
+			children = (
+				61A2CF7123ED99F200E0814E /* SignupViewController.swift */,
+			);
+			path = Registeration;
+			sourceTree = "<group>";
+		};
+		B7EE93FEBF267709C47568EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				504F1181910E2676F6C9B88A /* Pods-ExBooks.debug.xcconfig */,
+				574FB2271C94A3F3A1F83B5B /* Pods-ExBooks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3A3F25CA29446475EA81C70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A69BE9C8DDB692F6CD52F260 /* Pods_ExBooks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61A2CF6223ED729500E0814E /* Build configuration list for PBXNativeTarget "ExBooks" */;
 			buildPhases = (
+				EB67C7DFC70A8C4D029A9D79 /* [CP] Check Pods Manifest.lock */,
 				61A2CF4723ED729200E0814E /* Sources */,
 				61A2CF4823ED729200E0814E /* Frameworks */,
 				61A2CF4923ED729200E0814E /* Resources */,
+				628E2838A472A525CD633B25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,22 +238,69 @@
 			files = (
 				61A2CF5E23ED729500E0814E /* LaunchScreen.storyboard in Resources */,
 				61A2CF5B23ED729500E0814E /* Assets.xcassets in Resources */,
+				61A2CF7623ED9D2800E0814E /* GoogleService-Info.plist in Resources */,
+				61A2CF7423ED9A3A00E0814E /* RegisterationStoryboard.storyboard in Resources */,
 				61A2CF5623ED729200E0814E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		628E2838A472A525CD633B25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB67C7DFC70A8C4D029A9D79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExBooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		61A2CF4723ED729200E0814E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61049D8423EDA6AF00DDB6E2 /* RegisterationManager.swift in Sources */,
+				61A2CF7223ED99F200E0814E /* SignupViewController.swift in Sources */,
 				61A2CF5323ED729200E0814E /* ViewController.swift in Sources */,
 				61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */,
 				61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */,
 				61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */,
 				61A2CF5923ED729200E0814E /* ExBooks.xcdatamodeld in Sources */,
+				61049D8123EDA63F00DDB6E2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +442,7 @@
 		};
 		61A2CF6323ED729500E0814E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504F1181910E2676F6C9B88A /* Pods-ExBooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +460,7 @@
 		};
 		61A2CF6423ED729500E0814E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574FB2271C94A3F3A1F83B5B /* Pods-ExBooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
