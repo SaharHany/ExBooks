@@ -9,14 +9,16 @@
 import UIKit
 import CoreData
 import Firebase
+import GoogleSignIn
+import FirebaseAuth
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
     
 //        if #available(iOS 13.0, *) {
 //            window?.overrideUserInterfaceStyle = .light
@@ -84,5 +86,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+      // ...
+      if let error = error {
+        // ...
+        return
+      }
+
+      guard let authentication = user.authentication else { return }
+        print("appdelegate")
+      let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                        accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+                 if let error = error {
+                   // ...
+                   return
+                 }
+                 // User is signed in
+                 // ...
+                   print("logined successfully")
+               }
+      // ...
+    }
+
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
+    }
 }
 

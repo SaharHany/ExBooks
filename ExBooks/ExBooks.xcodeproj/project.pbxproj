@@ -22,6 +22,9 @@
 		61A2CF7223ED99F200E0814E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2CF7123ED99F200E0814E /* SignupViewController.swift */; };
 		61A2CF7423ED9A3A00E0814E /* RegisterationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF7323ED9A3A00E0814E /* RegisterationStoryboard.storyboard */; };
 		61A2CF7623ED9D2800E0814E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61A2CF7523ED9D2800E0814E /* GoogleService-Info.plist */; };
+		61BD526223F1AD8E001AB7E6 /* SignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BD526123F1AD8E001AB7E6 /* SignInManager.swift */; };
+		61BD526423F1ADD7001AB7E6 /* SignInStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BD526323F1ADD7001AB7E6 /* SignInStoryBoard.storyboard */; };
+		61BD526723F1AE11001AB7E6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BD526623F1AE11001AB7E6 /* SignInViewController.swift */; };
 		FE1338B4EBA4E17C87C19FE7 /* Pods_ExBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BE9C8DDB692F6CD52F260 /* Pods_ExBooks.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		61A2CF7123ED99F200E0814E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		61A2CF7323ED9A3A00E0814E /* RegisterationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterationStoryboard.storyboard; sourceTree = "<group>"; };
 		61A2CF7523ED9D2800E0814E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61BD526123F1AD8E001AB7E6 /* SignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInManager.swift; sourceTree = "<group>"; };
+		61BD526323F1ADD7001AB7E6 /* SignInStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryBoard.storyboard; sourceTree = "<group>"; };
+		61BD526623F1AE11001AB7E6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A69BE9C8DDB692F6CD52F260 /* Pods_ExBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +72,7 @@
 				61049D8323EDA6AF00DDB6E2 /* RegisterationManager.swift */,
 				61049D8523EDF3B300DDB6E2 /* ValidationManager.swift */,
 				61049D8723EDF92900DDB6E2 /* FirebaseAuthManager.swift */,
+				61BD526123F1AD8E001AB7E6 /* SignInManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 		61A2CF6523ED72AB00E0814E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61BD526523F1ADF8001AB7E6 /* SignIn */,
 				61A2CF7023ED93FD00E0814E /* Registeration */,
 			);
 			path = Controllers;
@@ -145,6 +153,7 @@
 		61A2CF6C23ED7CEF00E0814E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				61BD526323F1ADD7001AB7E6 /* SignInStoryBoard.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -163,6 +172,14 @@
 				61A2CF7123ED99F200E0814E /* SignupViewController.swift */,
 			);
 			path = Registeration;
+			sourceTree = "<group>";
+		};
+		61BD526523F1ADF8001AB7E6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				61BD526623F1AE11001AB7E6 /* SignInViewController.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		B7EE93FEBF267709C47568EE /* Pods */ = {
@@ -194,6 +211,7 @@
 				61A2CF4823ED729200E0814E /* Frameworks */,
 				61A2CF4923ED729200E0814E /* Resources */,
 				628E2838A472A525CD633B25 /* [CP] Embed Pods Frameworks */,
+				CF428F0B8BC07899CD5D6808 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +263,7 @@
 				61A2CF5E23ED729500E0814E /* LaunchScreen.storyboard in Resources */,
 				61A2CF5B23ED729500E0814E /* Assets.xcassets in Resources */,
 				61A2CF7623ED9D2800E0814E /* GoogleService-Info.plist in Resources */,
+				61BD526423F1ADD7001AB7E6 /* SignInStoryBoard.storyboard in Resources */,
 				61A2CF7423ED9A3A00E0814E /* RegisterationStoryboard.storyboard in Resources */,
 				61A2CF5623ED729200E0814E /* Main.storyboard in Resources */,
 			);
@@ -268,6 +287,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF428F0B8BC07899CD5D6808 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExBooks/Pods-ExBooks-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EB67C7DFC70A8C4D029A9D79 /* [CP] Check Pods Manifest.lock */ = {
@@ -303,9 +339,11 @@
 				61A2CF7223ED99F200E0814E /* SignupViewController.swift in Sources */,
 				61A2CF5323ED729200E0814E /* ViewController.swift in Sources */,
 				61049D8623EDF3B300DDB6E2 /* ValidationManager.swift in Sources */,
+				61BD526223F1AD8E001AB7E6 /* SignInManager.swift in Sources */,
 				61049D8823EDF92900DDB6E2 /* FirebaseAuthManager.swift in Sources */,
 				61A2CF4F23ED729200E0814E /* AppDelegate.swift in Sources */,
 				61A2CF5123ED729200E0814E /* SceneDelegate.swift in Sources */,
+				61BD526723F1AE11001AB7E6 /* SignInViewController.swift in Sources */,
 				61A2CF6F23ED7D1800E0814E /* Book.swift in Sources */,
 				61A2CF5923ED729200E0814E /* ExBooks.xcdatamodeld in Sources */,
 				61049D8123EDA63F00DDB6E2 /* User.swift in Sources */,
